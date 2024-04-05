@@ -1,6 +1,6 @@
-import React from 'react'
-import founder from "../../utils/img/founder.png"
-import pinkBtn from "../../utils/img/pinkBtn.png"
+import React from 'react';
+import founder from "../../utils/img/founder.png";
+import pinkBtn from "../../utils/img/pinkBtn.png";
 
 const Bottom = () => {
     const agenda = [
@@ -28,7 +28,7 @@ const Bottom = () => {
             img: pinkBtn,
             text: "Closing and Call to Action"
         },
-    ]
+    ];
 
     return (
         <div className='flex justify-center items-center flex-col mt-[3rem] mb-[3rem]'>
@@ -43,14 +43,11 @@ const Bottom = () => {
                     <div style={{ maxWidth: '502px' }}>
                         <p className='mb-[2rem]'> Founder of CloudPrism Solutions With over 7 years of hands-on Salesforce expertise, Prateek has guided numerous individuals to successful careers in the tech industry.</p>
                         <p> Founder of CloudPrism Solutions With over 7 years of hands-on Salesforce expertise, Prateek has guided numerous individuals to successful careers in the tech industry.</p>
-
                     </div>
-
                 </div>
             </div>
 
-
-            <div className="mt-16 mb-8 w-[55rem] h-[27rem] rounded-xl shadow-md flex flex-col">
+            <div className="mt-16 mb-8 w-[55rem] h-[27rem] rounded-xl shadow-md flex flex-col" style={{ '@media only screen and (max-width: 768px)': { flexDirection: 'column' } }}>
                 <p className="text-white text-center font-bold text-4xl mt-10 mb-[2rem]" style={{ fontFamily: 'syne' }}>Frequently Asked Questions</p>
                 <div className="flex flex-col space-y-4">
                     {agenda.map((item, index) => (
@@ -66,27 +63,28 @@ const Bottom = () => {
                 </div>
                 <button
                     type="submit"
+                    className="reserve-button"
                     style={{
                         background: 'rgba(245, 71, 142, 1)',
                         boxShadow: '0px 4px 82px 0px #00000040',
                         padding: '0.1rem 0.4rem',
-                        margin: '4rem 9rem',
+                        margin: '2rem auto',
                         borderRadius: '1.8rem',
                         fontFamily: 'Poppins',
                         fontSize: '25px',
                         fontWeight: '600',
                         lineHeight: '46.92px',
-                        // letterSpacing: '0.17em',
                         textAlign: 'center',
+                        '@media only screen and (max-width: 768px)': {
+                            margin: '4rem auto',
+                        }
                     }}
                 >
-                   Reserve My Seat Now!
+                    Reserve My Seat Now!
                 </button>
             </div>
-
-
         </div>
-    )
-}
+    );
+};
 
-export default Bottom
+export default Bottom;

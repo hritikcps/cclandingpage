@@ -46,11 +46,33 @@ const Top = () => {
             <div className='bg-white mt-[4rem] h-[20rem] w-[40rem] rounded-xl flex justify-center items-center'>
                 Video or Photo
             </div>
+            <style>
+                {`
+                @media only screen and (max-width: 768px) {
+                    .mb-[8rem] {
+                        margin-bottom: 4rem !important;
+                    }
+                    .mb-[7rem] {
+                        margin-bottom: 3.5rem !important;
+                    }
+                    .ml-[8rem] {
+                        margin-left: 4rem !important;
+                    }
+                    .ml-[5rem] {
+                        margin-left: 2.5rem !important;
+                    }
+                    .h-[10rem] {
+                        height: 8rem !important;
+                    }
+                    .w-[40rem] {
+                        width: 35rem !important;
+                    }
+                }
+                `}
+            </style>
         </div>
 
     )
 }
 
 export default Top
-
-

@@ -4,7 +4,7 @@ import pencil from "../../utils/img/pencil.png";
 import stars from "../../utils/img/stars.png";
 import bulb from "../../utils/img/bulb.png";
 import sound from "../../utils/img/sound.png";
-import pinkBtn from "../../utils/img/pinkBtn.png"
+import pinkBtn from "../../utils/img/pinkBtn.png";
 
 const Middle = () => {
     const programData = [
@@ -62,7 +62,7 @@ const Middle = () => {
             img: pinkBtn,
             text: "Closing and Call to Action"
         },
-    ]
+    ];
 
     const gridStyle = {
         display: 'grid',
@@ -70,6 +70,9 @@ const Middle = () => {
         gridGap: '1rem',
         justifyContent: 'center',
         alignItems: 'center',
+        '@media only screen and (max-width: 768px)': {
+            gridTemplateColumns: '1fr',
+        }
     };
 
     return (
@@ -98,8 +101,10 @@ const Middle = () => {
                         fontSize: '25px',
                         fontWeight: '600',
                         lineHeight: '46.92px',
-                        // letterSpacing: '0.17em',
                         textAlign: 'center',
+                        '@media only screen and (max-width: 768px)': {
+                            margin: '3rem 2rem',
+                        }
                     }}
                 >
                     Kickstart your Salesforce Career at just Rs 249/-
@@ -132,11 +137,6 @@ const Middle = () => {
                     ))}
                 </div>
             </div>
-
-
-
-
-
         </div>
     );
 };
